@@ -1,0 +1,44 @@
+{
+	"folders": [
+		{
+			"path": "cpp-1-7-2"
+		},
+		{
+			"path": "cpp-1-7"
+		},
+		{
+			"path": "cpp-1-8-1"
+		},
+		{
+			"path": "cpp-1-8-2"
+		},
+		{
+			"path": "cpp-1-9-1"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.tcc": "cpp",
+			"cctype": "cpp",
+			"clocale": "cpp",
+			"cstdint": "cpp",
+			"cstdio": "cpp",
+			"cstdlib": "cpp",
+			"cwchar": "cpp",
+			"cwctype": "cpp",
+			"exception": "cpp",
+			"initializer_list": "cpp",
+			"iosfwd": "cpp",
+			"iostream": "cpp",
+			"istream": "cpp",
+			"limits": "cpp",
+			"new": "cpp",
+			"ostream": "cpp",
+			"stdexcept": "cpp",
+			"streambuf": "cpp",
+			"system_error": "cpp",
+			"type_traits": "cpp",
+			"typeinfo": "cpp"
+		}
+	}
+}

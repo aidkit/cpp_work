@@ -1,0 +1,71 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build-debug",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-Command",
+				"\"C:/CMake/bin/cmake.exe -DCMAKE_BUILD_TYPE=Debug -G \\\"MinGW Makefiles\\\" ..; C:/MinGW/bin/mingw32-make.exe -f Makefile\""
+			],
+			"options": {
+				"cwd": "${workspaceRoot}/debug"
+			},
+			"group": "build",
+			"presentation": {
+				// Reveal the output only if unrecognized errors occur.
+				"reveal": "always"
+			},
+			// Use the standard MS compiler pattern to detect errors, warnings and infos
+			"problemMatcher": {
+				"owner": "gcc",
+				"fileLocation": "absolute",
+				"pattern": {
+					"regexp": "^(.*):(\\d+):(\\d+):\\s+(.*):\\s+(.*)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"endLine": 2,
+					"endColumn": 3,
+					"severity": 4,
+					"message": 5
+				}
+			}
+        },
+		{
+			"label": "build-release",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-Command",
+				"\"C:/CMake/bin/cmake.exe -DCMAKE_BUILD_TYPE=Release -G \\\"MinGW Makefiles\\\" ..; C:/MinGW/bin/mingw32-make.exe -f Makefile\""
+			],
+			"options": {
+				"cwd": "${workspaceRoot}/release"
+			},
+			"group": "build",
+			"presentation": {
+				// Reveal the output only if unrecognized errors occur.
+				"reveal": "always"
+			},
+			// Use the standard MS compiler pattern to detect errors, warnings and infos
+			"problemMatcher": {
+				"owner": "gcc",
+				"fileLocation": "absolute",
+				"pattern": {
+					"regexp": "^(.*):(\\d+):(\\d+):\\s+(.*):\\s+(.*)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"endLine": 2,
+					"endColumn": 3,
+					"severity": 4,
+					"message": 5
+				}
+			}
+		}
+	]
+}
