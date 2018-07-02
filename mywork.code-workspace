@@ -23,6 +23,27 @@
 		},
 		{
 			"path": "cpp-1-10-2"
+		},
+		{
+			"path": "cpp-1-13-1"
+		},
+		{
+			"path": "cpp-1-13-5"
+		},
+		{
+			"path": "cpp-1-14_1-2-4"
+		},
+		{
+			"path": "cpp-1-14_2-2-1"
+		},
+		{
+			"path": "cpp-1-14_2-2-3"
+		},
+		{
+			"path": "cpp-1-14_2-2-4"
+		},
+		{
+			"path": "cpp-1-15_2-1"
 		}
 	],
 	"settings": {
@@ -47,7 +68,9 @@
 			"streambuf": "cpp",
 			"system_error": "cpp",
 			"type_traits": "cpp",
-			"typeinfo": "cpp"
+			"typeinfo": "cpp",
+			"cmath": "cpp",
+			"numeric": "cpp"
 		}
 	}
 }
